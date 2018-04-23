@@ -9,16 +9,17 @@ import { Settings } from '../providers/providers';
 
 @Component({
   template: `<ion-menu [content]="content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Pages</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
     <ion-content>
+      <ion-item class="custom-slide-menu" color="wisteria">
+        <ion-avatar item-left>
+          <img src="assets/img/marty-avatar.png" style="width: 70px; height: 70px;">
+        </ion-avatar>
+        <strong>Abdee Surabee</strong>
+        <p>Lihat profil selengkapnya</p>
+      </ion-item>
       <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          {{p.title}}
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="custom-menu-item">
+          <ion-icon name="{{ p.icon }}" item-start></ion-icon> {{ p.title }}
         </button>
       </ion-list>
     </ion-content>
@@ -32,6 +33,10 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
+    { title: 'Home', component: 'HomePage', icon: 'home' },
+    { title: 'Rombongan', component: 'ListJamaahPage', icon: 'people' },
+    { title: 'Keluar', icon: 'log-out' }
+    /*
     { title: 'Tutorial', component: 'TutorialPage' },
     { title: 'Welcome', component: 'WelcomePage' },
     { title: 'Tabs', component: 'TabsPage' },
@@ -43,6 +48,7 @@ export class MyApp {
     { title: 'Menu', component: 'MenuPage' },
     { title: 'Settings', component: 'SettingsPage' },
     { title: 'Search', component: 'SearchPage' }
+    */
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
