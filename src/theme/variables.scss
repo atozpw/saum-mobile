@@ -29,7 +29,27 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  rebecca: (
+    base: #7b1fa2,
+    contrast: #ffffff
+  ),
+  saffron: (
+    base: #F4D03F,
+    contrast: #ffffff
+  ),
+  wisteria: (
+    base: #7E57C2,
+    contrast: #ffffff
+  ),
+  sunflower: (
+    base: #f1c40f,
+    contrast: #ffffff
+  ),
+  spiro: (
+    base: #25ccf7,
+    contrast: #ffffff
+  )
 );
 
 

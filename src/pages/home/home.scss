@@ -1,0 +1,35 @@
+page-home {
+    ion-slides{
+        height: 150px;
+    }
+    // iOS
+    .content-ios{
+        background: #eee;
+    }
+    .toolbar-ios ion-title{
+        padding: 0px;
+    }
+    // Custom
+    .thumbnail{
+        background: #fff;
+        height: 100px;
+        display: block;
+    }
+    .thumb-atas{
+        height: 65px;
+        padding-top: 14px;
+        text-align: center;
+    }
+    .thumb-bawah{
+        text-align: center;
+        color: #616161;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .thumb-img{
+        width: 45px;
+    }
+    .swiper-pagination-bullet-active{
+        background: #25ccf7;
+    }
+}
