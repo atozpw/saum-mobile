@@ -17,7 +17,7 @@ import { Settings } from '../providers/providers';
         <strong>Abdee Surabee</strong>
         <p>Lihat profil selengkapnya</p>
       </ion-item>
-      <ion-list>
+      <ion-list no-lines>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="custom-menu-item">
           <ion-icon name="{{ p.icon }}" item-start></ion-icon> {{ p.title }}
         </button>

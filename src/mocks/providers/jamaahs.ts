@@ -16,39 +16,39 @@ export class Jamaahs {
   constructor() {
     let jamaahs = [
       {
-        "name": "Burt Bear",
+        "name": "Edy Purwanto",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "about": "Pasteur"
       },
       {
-        "name": "Charlie Cheetah",
+        "name": "Riki Rahayu",
         "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "about": "Cimahi"
       },
       {
-        "name": "Donald Duck",
+        "name": "Tristianto Pradipta",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "about": "Bandung"
       },
       {
-        "name": "Eva Eagle",
+        "name": "Avantika Julianti",
         "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "about": "Cicalengka"
       },
       {
-        "name": "Ellie Elephant",
+        "name": "Siswo Puspito",
         "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "about": "Kiaracondong"
       },
       {
-        "name": "Molly Mouse",
+        "name": "Dadan Ramdan",
         "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "about": "Bandung"
       },
       {
-        "name": "Paul Puppy",
+        "name": "Dila Aulia",
         "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "about": "Ciwastra"
       }
     ];
 

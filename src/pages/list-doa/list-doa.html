@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="wisteria">
+    <ion-title>Doa/Bacaan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <accordion-list *ngFor="let item of items; let index = index"
+                  [title]="item.title"
+                  textColor="#fff"
+                  hasMargin="false"
+                  headerColor="#ffca28">
+    <div class="arabic" text-wrap>{{ item.arabic }}</div>
+    <div class="latin" text-wrap>{{ item.latin }}</div>
+    <div class="mean" text-wrap>
+      <strong>Artinya:</strong><br>
+      <i>"{{ item.mean }}"</i>
+    </div>
+  </accordion-list>
+</ion-content>

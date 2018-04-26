@@ -19,4 +19,16 @@ export class HomePage {
     this.navCtrl.push('ListJamaahPage');
   }
 
+  openMenuBerita() {
+    this.navCtrl.push('ListNewsPage');
+  }
+
+  openMenuKegiatan() {
+    this.navCtrl.push('ListSchedulePage');
+  }
+
+  openMenuDoa() {
+    this.navCtrl.push('ListDoaPage');
+  }
+
 }
