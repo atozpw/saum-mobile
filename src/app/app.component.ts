@@ -23,7 +23,6 @@ import { Settings } from '../providers/providers';
         </button>
       </ion-list>
     </ion-content>
-
   </ion-menu>
   <ion-nav #content [root]="rootPage"></ion-nav>`
 })
@@ -34,8 +33,8 @@ export class MyApp {
 
   pages: any[] = [
     { title: 'Home', component: 'HomePage', icon: 'home' },
-    { title: 'Rombongan', component: 'ListJamaahPage', icon: 'people' },
-    { title: 'Keluar', icon: 'log-out' }
+    { title: 'Pengaturan', component: 'SettingsPage', icon: 'settings' },
+    { title: 'Keluar', component: 'LoginPage', icon: 'log-out' }
     /*
     { title: 'Tutorial', component: 'TutorialPage' },
     { title: 'Welcome', component: 'WelcomePage' },
@@ -63,7 +62,7 @@ export class MyApp {
 
   initTranslate() {
     // Set the default language for translation strings, and the current language.
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('id');
     const browserLang = this.translate.getBrowserLang();
 
     if (browserLang) {
@@ -79,7 +78,7 @@ export class MyApp {
         this.translate.use(this.translate.getBrowserLang());
       }
     } else {
-      this.translate.use('en'); // Set your language here
+      this.translate.use('id'); // Set your language here
     }
 
     this.translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
