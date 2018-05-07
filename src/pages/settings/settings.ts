@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, NavParams, Navbar } from 'ionic-angular';
@@ -35,11 +35,11 @@ export class SettingsPage {
 
   subSettings: any = SettingsPage;
 
+  @ViewChild(Navbar) navBar: Navbar;
   constructor(public navCtrl: NavController,
     public settings: Settings,
     public formBuilder: FormBuilder,
     public navParams: NavParams,
-    public navBar: Navbar,
     public translate: TranslateService) {
   }
 
@@ -70,6 +70,7 @@ export class SettingsPage {
   ionViewDidLoad() {
     // Build an empty form for the template to render
     this.form = this.formBuilder.group({});
+    this.setBackButtonAction();
   }
 
   ionViewWillEnter() {
@@ -89,8 +90,6 @@ export class SettingsPage {
 
       this._buildForm();
     });
-
-    this.setBackButtonAction();
   }
 
   ngOnChanges() {
