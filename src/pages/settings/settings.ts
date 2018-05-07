@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Navbar } from 'ionic-angular';
 
+import { MainPage } from '../pages';
 import { Settings } from '../../providers/providers';
 
 /**
@@ -38,6 +39,7 @@ export class SettingsPage {
     public settings: Settings,
     public formBuilder: FormBuilder,
     public navParams: NavParams,
+    public navBar: Navbar,
     public translate: TranslateService) {
   }
 
@@ -87,9 +89,17 @@ export class SettingsPage {
 
       this._buildForm();
     });
+
+    this.setBackButtonAction();
   }
 
   ngOnChanges() {
     console.log('Ng All Changes');
+  }
+
+  setBackButtonAction(){
+    this.navBar.backButtonClick = () => {
+     this.navCtrl.setRoot(MainPage);
+    }
   }
 }
