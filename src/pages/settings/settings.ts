@@ -45,7 +45,7 @@ export class SettingsPage {
     public translate: TranslateService) {
       this.platform.ready().then(() => {
         this.platform.registerBackButtonAction(() => {
-          this.nav.setRoot('HomePage'); 
+          this.nav.setRoot(MainPage); 
         });
    });
   }
