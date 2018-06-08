@@ -1,9 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, NavParams, Nav, Platform } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { MainPage } from '../pages';
 import { Settings } from '../../providers/providers';
 
 /**
@@ -35,19 +34,11 @@ export class SettingsPage {
 
   subSettings: any = SettingsPage;
 
-  @ViewChild(Nav) nav: Nav;
-
   constructor(public navCtrl: NavController,
-    public platform: Platform,
     public settings: Settings,
     public formBuilder: FormBuilder,
     public navParams: NavParams,
     public translate: TranslateService) {
-      this.platform.ready().then(() => {
-        this.platform.registerBackButtonAction(() => {
-          this.nav.setRoot(MainPage); 
-        });
-   });
   }
 
   _buildForm() {

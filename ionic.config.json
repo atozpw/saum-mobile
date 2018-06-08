@@ -2,5 +2,7 @@
   "name": "product_umroh_mobile",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

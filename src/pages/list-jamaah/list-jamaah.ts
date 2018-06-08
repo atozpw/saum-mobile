@@ -34,7 +34,7 @@ export class ListJamaahPage {
   }
   
   openItem(jamaah: Jamaah) {
-    this.navCtrl.push('JamaahDetailPage', {
+    this.navCtrl.push('ItemDetailPage', {
       jamaah: jamaah
     });
   }

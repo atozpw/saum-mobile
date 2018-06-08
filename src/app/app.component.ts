@@ -32,7 +32,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Home', component: 'HomePage', icon: 'home' },
+    { title: 'Beranda', component: 'HomePage', icon: 'home' },
     { title: 'Pengaturan', component: 'SettingsPage', icon: 'settings' },
     { title: 'Keluar', component: 'LoginPage', icon: 'log-out' }
     /*
